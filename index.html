@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Тестовое задание Webspark - Орленко Михаил</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/theme/default.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue-slider-component@latest/dist/vue-slider-component.umd.min.js"></script>
+
+    <link data-require="bootstrap@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" />
+
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script data-require="bootstrap@3.3.7" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script data-require="MomentJS@2.10.0" data-semver="2.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+<script>
+$(function() {
+  $('#datetimepicker1').datetimepicker();
+  $('#datetimepicker2').datetimepicker();
+});
+</script>
+        
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="logo-wrap">
+                  <img class="logo" src="images/logo.png" alt="logo">
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <div class="col-lg-12">
+                  <span class="company_name">monblanproject</span>
+                  <span class="start_date">Start on 17-02-2016</span>
+                </div>
+                <div class="col-lg-12 statistic">
+                  <span><strong>870</strong>posts</span>
+                  <span><strong>11.784</strong>followers</span>
+                  <span><strong>112</strong>following</span>
+                </div>
+                <div class="col-lg-8 col-md-12 form_wrap">
+                  <label>Date</label>
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker1">
+                      <input type="text" class="form-control" placeholder="from"/>
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group date" id="datetimepicker2">
+                      <input type="text" class="form-control" placeholder="to"/>
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 products_wrap list">
+            <div class="buttons">
+                <button class="grid"><span class="glyphicon glyphicon-th" aria-hidden="true"></span></button>
+                <button class="list"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span></button>
+            </div>
+          
+            <div class="products ">
+            
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod1.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod2.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">12.800</span>
+                      <span class="glyphicon glyphicon-comment">3.100</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod3.jpg" alt="product"></div>
+                  <div class="label_wrap">
+                    <img class="label_img" src="images/label.png" alt="label">
+                  </div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-play">67</span>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod4.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod5.jpg" alt="product"></div>
+                  <div class="label_wrap">
+                    <img class="label_img" src="images/label.png" alt="label">
+                  </div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-play">128</span>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-play">67</span>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod6.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod7.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod8.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="items">
+                  <div class="item_img_wrap"><img class="item_img" src="images/prod9.jpg" alt="product"></div>
+                  <div class="all_info">
+                    <div class="img_info_today">
+                      <p>Today</p>
+                      <span class="glyphicon glyphicon-heart">128</span>
+                      <span class="glyphicon glyphicon-comment">31</span>
+                    </div>
+                    <div class="img_info_previos">
+                      <p>9-08-2016</p>
+                      <span class="glyphicon glyphicon-heart">67</span>
+                      <span class="glyphicon glyphicon-comment">22</span>
+                    </div>
+                    <div class="img_info_load">
+                      <p>Image upload </p>
+                      <span>11-04-2016</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="load_more_wrap"><a href="#">LOAD MORE</a></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <script>
+   jQuery(document).ready(function($){
+ $('button').on('click',function(e) {
+    if ($(this).hasClass('grid')) {
+        $('.products_wrap ').removeClass('list').addClass('grid');
+    }
+    else if($(this).hasClass('list')) {
+        $('.products_wrap ').removeClass('grid').addClass('list');
+    }
+}); 
+   });
+   </script>
+</body>
+</html>
